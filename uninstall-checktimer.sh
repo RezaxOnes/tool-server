@@ -22,6 +22,8 @@ echo -e "${Green}[-] Dang xoa time-shutdownAT.sh${RESET}"
 sudo rm -f /usr/local/bin/time-shutdownAT.sh
 echo -e "${Green}[-] Dang xoa time-command.log${RESET}"
 sudo rm -f /var/log/time-command.log
+echo -e "${Green}[-] Dang xoa shutdown_done_in_day.flag (Neu Co)${RESET}"
+sudo rm -f /var/log/shutdown_done_in_day.flag
 echo -e "${Green}[-] Lam moi systemctl${RESET}"
 sudo systemctl daemon-reexec && sudo systemctl daemon-reload
 
