@@ -7,7 +7,7 @@ Flag_Bool="/var/log/shutdown_done_in_day.flag"
 target_time_shutdown="0900"
 
 if [ "$presentTime" -ge "$target_time_shutdown" ] && [ ! -f "$Flag_Bool" ]; then
-echo "May Se Tat Nguon Trong 3s Do <=$target_time_shutdown Va Danh Dau Bang Cach Tao File shutdown_done_in_day O /var/log/ Hay Xoa No Neu Muon Script Chay Lai Trong Ngay Hom Sau (vui long khong xoa trong ngay hom nay)" >> "$LOGFILE"
+echo "May Se Tat Nguon Trong 3s Do <=$target_time_shutdown Va Danh Dau Bang Cach Tao File $Flag_Bool O /var/log/ Hay Xoa No Neu Muon Script Chay Lai Trong Ngay Hom Sau (vui long khong xoa trong ngay hom nay)" >> "$LOGFILE"
 sleep 3
     sync
     /usr/bin/systemctl poweroff -i
