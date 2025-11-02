@@ -1,4 +1,4 @@
-**This github repository "https://github.com/RezaxOnes/autoShutdown" is official by Rezaxones Limited. Additionly, all is fake.**
+**This github repository "https://github.com/RezaxOnes/tool-server" is official by Rezaxones Limited. Additionly, all is fake.**
 
 # autoShutdown(time) 1.0.0
 
