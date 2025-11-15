@@ -9,6 +9,11 @@ read -p ">> " user_m
 set -Eeuo pipefail
 trap 'echo -e "${Red} Khong the thuc hien thao tac do loi khong xac dinh, huy thuc thi script.${RESET}" ' ERR
 
+if [[ "$user_m" == "q" || "$user_m" == "quit" || "$user_m" == "exit" ]]; then
+echo "Good Bye!"
+exit 0 
+fi
+
 # Thuc Thi
 
 echo -e "${Green}[-] Copy script time-shutdownAT.sh => /usr/local/bin/${RESET}"
