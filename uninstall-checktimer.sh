@@ -9,7 +9,7 @@ read -p ">> " user_m
 set -Eeuo pipefail
 trap 'echo -e "${Red} Khong the thuc hien thao tac do loi khong xac dinh, huy thuc thi script.${RESET}" ' ERR
 
-if [[ "$link_cp" == "q" || "$link_cp" == "quit" || "$link_cp" == "exit" ]]; then
+if [[ "$user_m" == "q" || "$user_m" == "quit" || "$user_m" == "exit" ]]; then
 echo "Good Bye!"
 exit 0 
 fi
