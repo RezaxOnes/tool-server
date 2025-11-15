@@ -15,7 +15,7 @@ read -p ">> " keyEdit
 
 if [[ "$web_conf" == "help" || "$newIP" == "help" || "$keyEdit" == "help" ]]; then
 echo "server_name 123.45.67.89; # KeyEdit=YourKeyHere (Ex: KeyEdit=686868)"
-exit 0;
+exit 0
 fi
 
 # Thuc Thi
